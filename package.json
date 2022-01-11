@@ -13,7 +13,7 @@
         "format": "npx prettier --write \"**/*.{js,jsx,json,ts,tsx}\"",
         "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\""
     },
-    "husky": {
+    "husky@4": {
         "hooks": {
             "pre-commit": "npm run typecheck && npm run format:check && npm run lint"
         }
@@ -39,6 +39,7 @@
         "eslint": "^8.6.0",
         "eslint-config-prettier": "^8.3.0",
         "eslint-plugin-react": "^7.28.0",
+        "husky": "^4.3.8",
         "lint-staged": "^12.1.7",
         "prettier": "2.5.1",
         "typescript": "~4.3.5"
