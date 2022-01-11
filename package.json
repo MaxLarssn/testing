@@ -15,7 +15,7 @@
     },
     "husky": {
         "hooks": {
-            "pre-commit": "npm run typecheck && npm run format:check && npm run lint"
+            "pre-commit": "npm run typecheck && lint-staged"
         }
     },
     "dependencies": {
@@ -26,6 +26,10 @@
         "react-native": "0.64.3",
         "react-native-web": "0.17.1"
     },
+    "lint-staged": {
+        "src/**/*.{js,jsx,ts,tsx}": "eslint",
+        "**/*.{js,jsx,json,ts,tsx}": "prettier --write"
+    },
     "devDependencies": {
         "@babel/core": "^7.12.9",
         "@types/react": "~17.0.21",
@@ -35,6 +39,7 @@
         "eslint": "^8.6.0",
         "eslint-config-prettier": "^8.3.0",
         "eslint-plugin-react": "^7.28.0",
+        "lint-staged": "^12.1.7",
         "prettier": "2.5.1",
         "typescript": "~4.3.5"
     },
