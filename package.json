@@ -13,7 +13,7 @@
         "format": "npx prettier --write \"**/*.{js,jsx,json,ts,tsx}\"",
         "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\""
     },
-    "husky": {
+    "husky@4": {
         "hooks": {
             "pre-commit": "npm run typecheck && lint-staged"
         }
